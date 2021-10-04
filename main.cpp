@@ -24,7 +24,7 @@ void keyCallback(uint64_t c, bool v){ // Store key infomation inside our own key
 
 void callback(Actor* player){
 
-    if (keymap[0x43]) { // (int)'C'
+    if (keymap[0x43]) { //(int)'C'
         player->setFieldOfView(0.1f);
     }
     else {
