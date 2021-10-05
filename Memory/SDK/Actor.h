@@ -30,6 +30,10 @@ public:
         return reinterpret_cast<Vector3*>((uintptr_t)(this) + 0x4F8);
     };
 
+    float* speedInAir() { //Airaccelaration
+        return reinterpret_cast<float*>((uintptr_t)(this) + 0x7D8);
+    };
+
     // cVoids
     void teleport(Vector3 v) {
         position()->lower.x = v.x;
@@ -48,4 +52,12 @@ public:
 	void setFieldOfView(float v) {
 		*(float*)((uintptr_t)(this) + 0x1140) = v; // 0x1140
 	}
+
+    float getSpeed() { //read only 
+        return *(float*)((uintptr_t)(this) + 0x840);
+    }
+
+    float getFallDistance() { //read only 
+        return *(float*)((uintptr_t)(this) + 0x1D4);
+    }
 };
