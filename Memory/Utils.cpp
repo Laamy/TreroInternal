@@ -59,3 +59,14 @@ uintptr_t Mem::findMultiLvlPtr(uintptr_t baseAddr, std::vector<unsigned int> off
 
     return addr;
 };
+
+void Mem::DebugPrint(const char* str){
+    auto path = getenv("APPDATA") + std::string("\\..\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\RoamingState\\TreroInternal\\");
+    std::filesystem::create_directories(path);
+    std::ofstream myfile (path + "Log.txt");
+    if (myfile.is_open())
+    {
+        myfile << std::string(str) + "\n";
+        myfile.close();
+    }
+};

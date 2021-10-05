@@ -4,6 +4,10 @@
 #include <Windows.h>
 #include <Psapi.h>
 #include <vector>
+#include <filesystem>
+#include <fstream>
+#include <string>
+#include <iostream>
 
 #define INRANGE(x,a,b)   (x >= a && x <= b)
 #define GET_BYTE( x )    (GET_BITS(x[0]) << 4 | GET_BITS(x[1]))
@@ -13,6 +17,7 @@ class Mem {
 public:
     static uintptr_t findSig(const char*);
     static uintptr_t findMultiLvlPtr(uintptr_t, std::vector<unsigned int>);
+    static void DebugPrint(const char*);
 };
 
 #endif /* CLIENT_MEM_MEM */

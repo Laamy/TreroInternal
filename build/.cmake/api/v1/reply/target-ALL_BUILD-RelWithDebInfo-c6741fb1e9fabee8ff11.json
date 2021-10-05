@@ -17,10 +17,10 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "TreroInternal::@6890427a1f51a3e7e1df"
+			"id" : "minhook::@99bcec1629f35f9cdb3e"
 		},
 		{
-			"id" : "minhook::@99bcec1629f35f9cdb3e"
+			"id" : "TreroInternal::@6890427a1f51a3e7e1df"
 		},
 		{
 			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
