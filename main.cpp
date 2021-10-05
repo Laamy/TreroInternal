@@ -71,6 +71,10 @@ void init(HMODULE c){
 
         uintptr_t baseAddr = (uintptr_t)GetModuleHandleA("Minecraft.Windows.exe");
 
+        // F3 0F 10 81 ? ? ? ? 41 0F 2F 00
+        // 48 89 5C 24 08 57 48 83 EC ? 8B 05 ? ? ? ? 8B DA
+        // 48 89 5C 24 10 48 89 74 24 18 48 89 7C 24 20 55 41 54 41 55  41 56 41 57 48 8B EC 48 83 EC ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 F0 48 8B ? E8 
+
         uintptr_t hookAddr = (uintptr_t)(baseAddr + 0x1D6A220); // LocalPlayer hook
         uintptr_t keymapAddr = (uintptr_t)(baseAddr + 0x775230); // Keymap hook
         uintptr_t keyInfoAddr = (uintptr_t)(baseAddr + 0x1533B50); // Keyinfo hook (Hooking a different part to get this keyinfo because idk the fuckinbg arguments and it'll break whatever i hook wiuthout them)
