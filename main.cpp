@@ -79,9 +79,9 @@ void callback(Actor* player){
 
         if (wKey || aKey || sKey || dKey)
         {
-            player->velocity()->x = cos((yaw) * (PI / 180.0f)) * 0.35f;
-            if (*player->onGround() == 16777473) player->velocity()->y = 0.25f;
-            player->velocity()->z = sin((yaw) * (PI / 180.0f)) * 0.35f;
+            player->velocity()->x = cos((yaw) * (PI / 180.0f)) * 0.5f;
+            if (*player->onGround() == 16777473) player->velocity()->y = 0.3f;
+            player->velocity()->z = sin((yaw) * (PI / 180.0f)) * 0.5f;
         }
     }
 
