@@ -55,6 +55,21 @@
         "xstring": "cpp",
         "xtr1common": "cpp",
         "xtree": "cpp",
-        "xutility": "cpp"
-    }
+        "xutility": "cpp",
+        "array": "cpp",
+        "atomic": "cpp",
+        "bit": "cpp",
+        "cctype": "cpp",
+        "charconv": "cpp",
+        "clocale": "cpp",
+        "compare": "cpp",
+        "concepts": "cpp",
+        "format": "cpp",
+        "forward_list": "cpp",
+        "iostream": "cpp",
+        "iterator": "cpp",
+        "optional": "cpp",
+        "sstream": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
 }

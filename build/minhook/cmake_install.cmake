@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/yeemi/Desktop/TreroInternal-master/minhook
+# Install script for directory: C:/Users/Bjorn/Desktop/coding/TreroInternal/minhook
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,20 +34,20 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/minhook" TYPE FILE FILES
-    "C:/Users/yeemi/Desktop/TreroInternal-master/build/minhook/minhook-config.cmake"
-    "C:/Users/yeemi/Desktop/TreroInternal-master/build/minhook/minhook-config-version.cmake"
+    "C:/Users/Bjorn/Desktop/coding/TreroInternal/build/minhook/minhook-config.cmake"
+    "C:/Users/Bjorn/Desktop/coding/TreroInternal/build/minhook/minhook-config-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/yeemi/Desktop/TreroInternal-master/build/minhook/Debug/minhook.x64d.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/Bjorn/Desktop/coding/TreroInternal/build/minhook/Debug/minhook.x64d.lib")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/yeemi/Desktop/TreroInternal-master/build/minhook/Release/minhook.x64.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/Bjorn/Desktop/coding/TreroInternal/build/minhook/Release/minhook.x64.lib")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/yeemi/Desktop/TreroInternal-master/build/minhook/MinSizeRel/minhook.x64.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/Bjorn/Desktop/coding/TreroInternal/build/minhook/MinSizeRel/minhook.x64.lib")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/yeemi/Desktop/TreroInternal-master/build/minhook/RelWithDebInfo/minhook.x64.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/Bjorn/Desktop/coding/TreroInternal/build/minhook/RelWithDebInfo/minhook.x64.lib")
   endif()
 endif()
 
@@ -55,7 +55,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/minhook/minhook-targets.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/minhook/minhook-targets.cmake"
-         "C:/Users/yeemi/Desktop/TreroInternal-master/build/minhook/CMakeFiles/Export/lib/minhook/minhook-targets.cmake")
+         "C:/Users/Bjorn/Desktop/coding/TreroInternal/build/minhook/CMakeFiles/Export/lib/minhook/minhook-targets.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/minhook/minhook-targets-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -64,22 +64,22 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/minhook" TYPE FILE FILES "C:/Users/yeemi/Desktop/TreroInternal-master/build/minhook/CMakeFiles/Export/lib/minhook/minhook-targets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/minhook" TYPE FILE FILES "C:/Users/Bjorn/Desktop/coding/TreroInternal/build/minhook/CMakeFiles/Export/lib/minhook/minhook-targets.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/minhook" TYPE FILE FILES "C:/Users/yeemi/Desktop/TreroInternal-master/build/minhook/CMakeFiles/Export/lib/minhook/minhook-targets-debug.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/minhook" TYPE FILE FILES "C:/Users/Bjorn/Desktop/coding/TreroInternal/build/minhook/CMakeFiles/Export/lib/minhook/minhook-targets-debug.cmake")
   endif()
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/minhook" TYPE FILE FILES "C:/Users/yeemi/Desktop/TreroInternal-master/build/minhook/CMakeFiles/Export/lib/minhook/minhook-targets-minsizerel.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/minhook" TYPE FILE FILES "C:/Users/Bjorn/Desktop/coding/TreroInternal/build/minhook/CMakeFiles/Export/lib/minhook/minhook-targets-minsizerel.cmake")
   endif()
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/minhook" TYPE FILE FILES "C:/Users/yeemi/Desktop/TreroInternal-master/build/minhook/CMakeFiles/Export/lib/minhook/minhook-targets-relwithdebinfo.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/minhook" TYPE FILE FILES "C:/Users/Bjorn/Desktop/coding/TreroInternal/build/minhook/CMakeFiles/Export/lib/minhook/minhook-targets-relwithdebinfo.cmake")
   endif()
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/minhook" TYPE FILE FILES "C:/Users/yeemi/Desktop/TreroInternal-master/build/minhook/CMakeFiles/Export/lib/minhook/minhook-targets-release.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/minhook" TYPE FILE FILES "C:/Users/Bjorn/Desktop/coding/TreroInternal/build/minhook/CMakeFiles/Export/lib/minhook/minhook-targets-release.cmake")
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE DIRECTORY FILES "C:/Users/yeemi/Desktop/TreroInternal-master/minhook/include")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE DIRECTORY FILES "C:/Users/Bjorn/Desktop/coding/TreroInternal/minhook/include")
 endif()
 

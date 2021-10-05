@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\yeemi\Desktop\TreroInternal-master\main.cpp">
+    <ClCompile Include="C:\Users\Bjorn\Desktop\coding\TreroInternal\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\yeemi\Desktop\TreroInternal-master\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\Bjorn\Desktop\coding\TreroInternal\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{2D1F720D-DEB0-3B30-B766-46A69D8D5C2C}</UniqueIdentifier>
+      <UniqueIdentifier>{57CAAE25-C320-3707-BBB7-97E0738EAF6E}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
