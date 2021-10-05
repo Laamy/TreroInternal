@@ -30,6 +30,22 @@ public:
         return reinterpret_cast<Vector3*>((uintptr_t)(this) + 0x4F8);
     };
 
+    float* speedInAir() { //Airaccelaration
+        return reinterpret_cast<float*>((uintptr_t)(this) + 0x7D8);
+    };
+
+    std::string* username() {
+        return reinterpret_cast<std::string*>((uintptr_t)(this) + 0x900);
+    };
+
+    bool* isFlying() {
+        return reinterpret_cast<bool*>((uintptr_t)(this) + 0x9A0);
+    };
+
+    bool* canFly() {
+        return reinterpret_cast<bool*>((uintptr_t)(this) + 0x9AC);
+    };
+
     // cVoids
     void teleport(Vector3 v) {
         position()->lower.x = v.x;
@@ -48,4 +64,26 @@ public:
 	void setFieldOfView(float v) {
 		*(float*)((uintptr_t)(this) + 0x1140) = v; // 0x1140
 	}
+
+    void setSpeedInAir(float v) {
+		*(float*)((uintptr_t)(this) + 0x7D8) = v; // 0x7D8
+	}
+
+    float getSpeed() { //read only 
+        return *(float*)((uintptr_t)(this) + 0x840);
+    }
+
+    int getGroundState() {
+        return *(int*)((uintptr_t)(this) + 0x1D8);
+    }
+
+    void setFlyMode(bool isFlying, bool canFly)//don't use it's for some reason also modifieying the visibilety off other players
+    {
+        *(bool*)((uintptr_t)(this) + 0x9A0) = isFlying;
+        *(bool*)((uintptr_t)(this) + 0x9AC) = canFly;
+    }
+
+    float getFallDistance() { //read only 
+        return *(float*)((uintptr_t)(this) + 0x1D4);
+    }
 };

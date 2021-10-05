@@ -1,6 +1,6 @@
-^C:\USERS\YEEMI\DESKTOP\TREROINTERNAL-MASTER\BUILD\CMAKEFILES\08269CDDC5276A688022295D00590771\GENERATE.STAMP.RULE
+^C:\USERS\BJORN\DESKTOP\CODING\TREROINTERNAL\BUILD\CMAKEFILES\2429F214F7C95BE04C47A6D1C4B17711\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/yeemi/Desktop/TreroInternal-master -BC:/Users/yeemi/Desktop/TreroInternal-master/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/yeemi/Desktop/TreroInternal-master/build/TreroInternal.sln
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Bjorn/Desktop/coding/TreroInternal -BC:/Users/Bjorn/Desktop/coding/TreroInternal/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Bjorn/Desktop/coding/TreroInternal/build/TreroInternal.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

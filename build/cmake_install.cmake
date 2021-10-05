@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/yeemi/Desktop/TreroInternal-master
+# Install script for directory: C:/Users/Bjorn/Desktop/coding/TreroInternal
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/yeemi/Desktop/TreroInternal-master/build/minhook/cmake_install.cmake")
+  include("C:/Users/Bjorn/Desktop/coding/TreroInternal/build/minhook/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/yeemi/Desktop/TreroInternal-master/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Bjorn/Desktop/coding/TreroInternal/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

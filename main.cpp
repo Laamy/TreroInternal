@@ -36,12 +36,18 @@ void keyinfoCallback(KeyInfo* e){
 bool wasHeld = false;
 
 void callback(Actor* player){
-
     if (keymap[(int)'F']) // Internal OGMFly
     {
         wasHeld = true;
         auto speedMod = 0.7f;
-        
+
+        if(keymap[(int)'W']){
+            player->setSpeedInAir(speedMod);
+        }
+        else
+        {
+            player->setSpeedInAir(speedMod / 2);
+        }
         auto calcyaw = (player->bodyRots()->y + 90) * (PI / 180);
 
         player->velocity()->x = cos(calcyaw) * speedMod;
@@ -62,7 +68,6 @@ void callback(Actor* player){
     if (keymap[0x43])
         player->setFieldOfView(0.2f);
     else player->setFieldOfView(1);
-
     //_tick(player);
 };
 

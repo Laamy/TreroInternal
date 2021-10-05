@@ -1,6 +1,6 @@
 # CMake generation dependency list for this directory.
-C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in
-C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakePackageConfigHelpers.cmake
-C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/WriteBasicConfigVersionFile.cmake
-C:/Users/yeemi/Desktop/TreroInternal-master/minhook/CMakeLists.txt
-C:/Users/yeemi/Desktop/TreroInternal-master/minhook/cmake/minhook-config.cmake.in
+C:/Program Files/CMake/share/cmake-3.21/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in
+C:/Program Files/CMake/share/cmake-3.21/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-3.21/Modules/WriteBasicConfigVersionFile.cmake
+C:/Users/Bjorn/Desktop/coding/TreroInternal/minhook/CMakeLists.txt
+C:/Users/Bjorn/Desktop/coding/TreroInternal/minhook/cmake/minhook-config.cmake.in
