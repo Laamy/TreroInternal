@@ -10,12 +10,8 @@ public:
         return reinterpret_cast<Vector2*>((uintptr_t)(this) + 0x138);
     };
 
-    bool* onGround() {
-        return reinterpret_cast<bool*>((uintptr_t)(this) + 0x1D8);
-    };
-
-    bool* onGround2() {
-        return reinterpret_cast<bool*>((uintptr_t)(this) + 0x1D9);
+    int* onGround() {
+        return reinterpret_cast<int*>((uintptr_t)(this) + 0x1D8);
     };
 
     float* stepHeight() {

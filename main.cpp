@@ -16,22 +16,80 @@ typedef void(__thiscall* key)(uint64_t, bool);
 key _key;
 
 std::map<uint64_t, bool> keymap = std::map<uint64_t, bool>();
+std::map<uint64_t, bool> LKeymap = std::map<uint64_t, bool>();
 
 void keyCallback(uint64_t c, bool v){ // Store key infomation inside our own keymap ;p
+    LKeymap[c] = keymap[c];
     keymap[c] = v;
     _key(c, v);
 };
 
+bool bhop = false;
+
 void callback(Actor* player){
 
-    if (keymap[0x43]) { //(int)'C'
-        player->setFieldOfView(0.1f);
-    }
-    else {
-        player->setFieldOfView(1);
+    if (keymap[(int)'X'] && !LKeymap[(int)'X'])
+    {
+        bhop = !bhop;
     }
 
-    _tick(player);
+    if (bhop) // internal bhop 1.17.32
+    {
+        bool wKey = keymap[(int)'W'], sKey = keymap[(int)'S'], aKey = keymap[(int)'A'], dKey = keymap[(int)'D'];
+        auto rots = *player->bodyRots();
+        auto yaw = rots.y;
+
+        if (wKey)
+        {
+            if (!aKey && !dKey)
+            {
+                yaw += 90.0f;
+            }
+            else if (aKey)
+            {
+                yaw += 45.0f;
+            }
+            else if (dKey)
+            {
+                yaw += 135.0f;
+            }
+        }
+        else if (sKey)
+        {
+            if (!aKey && !dKey)
+            {
+                yaw -= 90.0f;
+            }
+            else if (aKey)
+            {
+                yaw -= 45.0f;
+            }
+            else if (dKey)
+            {
+                yaw -= 135.0f;
+            }
+        }
+        else if (!wKey && !sKey)
+        {
+            if (dKey)
+            {
+                yaw += 180.0f;
+            }
+        }
+
+        if (wKey || aKey || sKey || dKey)
+        {
+            player->velocity()->x = cos((yaw) * (PI / 180.0f)) * 0.4f;
+            if (*player->onGround() == 16777473) player->velocity()->y = 0.2f;
+            player->velocity()->z = sin((yaw) * (PI / 180.0f)) * 0.4f;
+        }
+    }
+
+    if (keymap[0x43])
+        player->setFieldOfView(0.2f);
+    else player->setFieldOfView(1);
+
+    //_tick(player);
 };
 
 void init(HMODULE c){
@@ -57,46 +115,3 @@ BOOL WINAPI DllMain(HINSTANCE hInstance, DWORD fdwReason, LPVOID lpReserved){
     };
     return TRUE;
 };
-
-/*
-
-if ((keymap[87] | keymap[0x41] | keymap[0x53] | keymap[0x44])){
-           float yaw = player->bodyRots()->y; // yaw
-            
-            if (keymap[87]){
-                if (!keymap[0x41] && !keymap[0x53]){
-                    yaw += 90;
-                }
-                if (keymap[0x41]){
-                    yaw += 45;
-                }
-                else if (keymap[0x44]){
-                    yaw += 135;
-                }
-            }
-            else if (keymap[0x53]){
-                if (!keymap[0x41] && !keymap[0x53]){
-                    yaw -= 90;
-                }
-                if (keymap[0x41]){
-                    yaw -= 45;
-                }
-                else if (keymap[0x44]){
-                    yaw -= 135;
-                }
-            }
-            else if (!keymap[87] && !keymap[0x53]){
-                if (!keymap[0x41] && keymap[0x44]){
-                    yaw += 180;
-                }
-            }
-            
-            if (player->touchingBlock()){
-                player->velocity()->y = 0.3f;
-            }
-            auto speed = 3.0f;
-
-            *player->velocity() = Vector3(cos((yaw) * (PI / 180.f)) * speed, player->velocity()->y, sin((yaw) * (PI / 180.f)) * speed);
-        }
-
-*/

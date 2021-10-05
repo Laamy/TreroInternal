@@ -2,13 +2,13 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "MinSizeRel/TreroInternal.dll"
+			"path" : "Release/TreroInternal.dll"
 		},
 		{
-			"path" : "MinSizeRel/TreroInternal.lib"
+			"path" : "Release/TreroInternal.lib"
 		},
 		{
-			"path" : "MinSizeRel/TreroInternal.pdb"
+			"path" : "Release/TreroInternal.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -62,7 +62,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O1 /Ob1 /DNDEBUG -MD"
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MD"
 				}
 			],
 			"defines" : 
@@ -88,11 +88,11 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 2,
 			"id" : "minhook::@99bcec1629f35f9cdb3e"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "TreroInternal::@6890427a1f51a3e7e1df",
@@ -106,7 +106,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "minhook\\MinSizeRel\\minhook.x64.lib",
+				"fragment" : "minhook\\Release\\minhook.x64.lib",
 				"role" : "libraries"
 			},
 			{
